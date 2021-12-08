@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="skillz_integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Game!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-oO-Jks">
+                                <rect key="frame" x="129.5" y="198" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCq-rt-FOt">
+                                <rect key="frame" x="159" y="433" width="98" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start Game"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MYE-Iw-vXF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DCq-rt-FOt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1ZR-uJ-4MY"/>
+                            <constraint firstItem="DCq-rt-FOt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2xq-lg-jWu"/>
+                            <constraint firstItem="dGt-oO-Jks" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="605-99-Umd"/>
+                            <constraint firstItem="dGt-oO-Jks" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="eep-xx-NeU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="52"/>
+        </scene>
+        <!--GameController-->
+        <scene sceneID="rhZ-mJ-KBR">
+            <objects>
+                <viewController storyboardIdentifier="GameController" title="GameController" id="4qe-jZ-ma9" customClass="GameController" customModule="skillz_integration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbE-xa-ibn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's play a game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw0-TN-lU9">
+                                <rect key="frame" x="140.5" y="140" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your score (500-1000)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-tk-sqx">
+                                <rect key="frame" x="100.5" y="235" width="213" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oko-1N-uLh">
+                                <rect key="frame" x="135.5" y="437.5" width="143" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit your Score"/>
+                                <connections>
+                                    <action selector="submitScore:" destination="4qe-jZ-ma9" eventType="touchUpInside" id="CuH-Kp-jD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0dC-0c-bZN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Xh-tk-sqx" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="2FW-7X-awW"/>
+                            <constraint firstItem="aw0-TN-lU9" firstAttribute="top" secondItem="0dC-0c-bZN" secondAttribute="top" constant="96" id="FxC-oT-JGi"/>
+                            <constraint firstItem="oko-1N-uLh" firstAttribute="centerY" secondItem="0dC-0c-bZN" secondAttribute="centerY" id="p3x-lb-BKa"/>
+                            <constraint firstItem="oko-1N-uLh" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="pZa-QR-7wv"/>
+                            <constraint firstItem="4Xh-tk-sqx" firstAttribute="top" secondItem="aw0-TN-lU9" secondAttribute="bottom" constant="74" id="sFf-zl-47L"/>
+                            <constraint firstItem="aw0-TN-lU9" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="zzB-L1-bW1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreField" destination="4Xh-tk-sqx" id="4cA-1M-aky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgc-mz-KDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169.5652173913045" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
