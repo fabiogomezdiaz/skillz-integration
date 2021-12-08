@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1762FAE7276129990000FC99 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762FAE6276129990000FC99 /* Skillz.framework */; };
+		1762FAE8276129990000FC99 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1762FAE6276129990000FC99 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		179190CB272D82B50083B2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179190CA272D82B50083B2B4 /* AppDelegate.swift */; };
 		179190CF272D82B50083B2B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179190CE272D82B50083B2B4 /* ViewController.swift */; };
 		179190D2272D82B50083B2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179190D0272D82B50083B2B4 /* Main.storyboard */; };
 		179190D4272D82B70083B2B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179190D3272D82B70083B2B4 /* Assets.xcassets */; };
 		179190D7272D82B70083B2B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179190D5272D82B70083B2B4 /* LaunchScreen.storyboard */; };
-		179190E0272D83A30083B2B4 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179190DF272D83A30083B2B4 /* Skillz.framework */; };
-		179190E1272D83A30083B2B4 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 179190DF272D83A30083B2B4 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		179190E8272D8DA30083B2B4 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179190E7272D8DA30083B2B4 /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		179190E2272D83A30083B2B4 /* Embed Frameworks */ = {
+		1762FAE9276129990000FC99 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				179190E1272D83A30083B2B4 /* Skillz.framework in Embed Frameworks */,
+				1762FAE8276129990000FC99 /* Skillz.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1762FAE6276129990000FC99 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Skillz.framework; path = "skillz-integration/skillz_ios_27.2.8/Skillz.framework"; sourceTree = "<group>"; };
+		1762FAEA27612DD00000FC99 /* SkillzBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillzBridgingHeader.h; path = skillz_ios_27.2.8/Swift/SkillzBridgingHeader.h; sourceTree = "<group>"; };
 		179190C7272D82B50083B2B4 /* skillz-integration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "skillz-integration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		179190CA272D82B50083B2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		179190CE272D82B50083B2B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		179190D3272D82B70083B2B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179190D6272D82B70083B2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179190D8272D82B70083B2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		179190DF272D83A30083B2B4 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Skillz.framework; path = "skillz-integration/skillz_ios_27.2.3/Skillz.framework"; sourceTree = "<group>"; };
-		179190E4272D84080083B2B4 /* SkillzBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkillzBridgingHeader.h; path = skillz_ios_27.2.3/Swift/SkillzBridgingHeader.h; sourceTree = "<group>"; };
 		179190E7272D8DA30083B2B4 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179190E0272D83A30083B2B4 /* Skillz.framework in Frameworks */,
+				1762FAE7276129990000FC99 /* Skillz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		179190C9272D82B50083B2B4 /* skillz-integration */ = {
 			isa = PBXGroup;
 			children = (
-				179190E4272D84080083B2B4 /* SkillzBridgingHeader.h */,
+				1762FAEA27612DD00000FC99 /* SkillzBridgingHeader.h */,
 				179190CA272D82B50083B2B4 /* AppDelegate.swift */,
 				179190CE272D82B50083B2B4 /* ViewController.swift */,
 				179190D0272D82B50083B2B4 /* Main.storyboard */,
@@ -91,7 +91,7 @@
 		179190DE272D83A30083B2B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				179190DF272D83A30083B2B4 /* Skillz.framework */,
+				1762FAE6276129990000FC99 /* Skillz.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,8 +106,8 @@
 				179190C3272D82B50083B2B4 /* Sources */,
 				179190C4272D82B50083B2B4 /* Frameworks */,
 				179190C5272D82B50083B2B4 /* Resources */,
-				179190E2272D83A30083B2B4 /* Embed Frameworks */,
 				179190E3272D83C00083B2B4 /* ShellScript */,
+				1762FAE9276129990000FC99 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -345,7 +345,7 @@
 				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/skillz-integration/skillz_ios_27.2.3",
+					"$(PROJECT_DIR)/skillz-integration/skillz_ios_27.2.8",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "skillz-integration/Info.plist";
@@ -365,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.fabiogomezdiaz.skillz-integration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "skillz-integration/skillz_ios_27.2.3/Swift/SkillzBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "skillz-integration/skillz_ios_27.2.8/Swift/SkillzBridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
@@ -383,7 +383,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/skillz-integration/skillz_ios_27.2.3",
+					"$(PROJECT_DIR)/skillz-integration/skillz_ios_27.2.8",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "skillz-integration/Info.plist";
@@ -403,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.fabiogomezdiaz.skillz-integration";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "skillz-integration/skillz_ios_27.2.3/Swift/SkillzBridgingHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "skillz-integration/skillz_ios_27.2.8/Swift/SkillzBridgingHeader.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = YES;
