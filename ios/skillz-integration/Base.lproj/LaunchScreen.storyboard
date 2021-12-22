@@ -16,25 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Game!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkd-ps-wbd">
-                                <rect key="frame" x="129.5" y="207" width="155" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Best Game Ever!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkd-ps-wbd">
+                                <rect key="frame" x="77" y="442.5" width="260" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9a-pb-n7q">
-                                <rect key="frame" x="158" y="386" width="98" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start Game"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="e9a-pb-n7q" firstAttribute="top" secondItem="Lkd-ps-wbd" secondAttribute="bottom" constant="158" id="7Gu-yV-YfV"/>
-                            <constraint firstItem="e9a-pb-n7q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Typ-cV-0Bb"/>
-                            <constraint firstItem="Lkd-ps-wbd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VZp-3I-koE"/>
-                            <constraint firstItem="Lkd-ps-wbd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="163" id="iVJ-TC-Gyu"/>
+                            <constraint firstItem="Lkd-ps-wbd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="G0Z-Zk-Tzv"/>
+                            <constraint firstItem="Lkd-ps-wbd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mgs-GD-TJF"/>
                         </constraints>
                     </view>
                 </viewController>

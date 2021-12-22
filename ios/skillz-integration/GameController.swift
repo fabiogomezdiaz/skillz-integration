@@ -10,6 +10,8 @@ import Skillz
 
 class GameController: UIViewController, UIAlertViewDelegate {
 
+    @IBOutlet weak var randomNumLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,8 +22,11 @@ class GameController: UIViewController, UIAlertViewDelegate {
         
         if submittedScore {
             returnToHomeScreen()
+            return
         }
         
+        let ranNum : Int = Skillz.getRandomNumber()
+        self.randomNumLabel.text = "Random #: \(String(ranNum))"
     }
 
     var submittedScore: Bool = false
@@ -63,13 +68,27 @@ class GameController: UIViewController, UIAlertViewDelegate {
         )
     }
     
+    // ABORT
+    @IBAction func abort(_ sender: Any) {
+        Skillz.skillzInstance().notifyPlayerAbort() {
+          // Completion block
+            
+//            self.showAlert(title: "Abort",
+//                           msg: "You have aborted the game!",
+//                           style: .alert,
+//                           returnToSkillz: true
+//                           )
+        }
+    }
+    
+    
     func showAlert(title: String, msg: String, style: UIAlertController.Style, returnToSkillz: Bool) {
         print(title)
         let alert = UIAlertController(title: title, message: msg, preferredStyle: style)
         
         if returnToSkillz {
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                let canReturn = Skillz.skillzInstance().returnToSkillz() { [self] in
+                _ = Skillz.skillzInstance().returnToSkillz() { [self] in
                     // make sure to clean things up if needed
                     print("Returning to Skillz")
                     view.removeFromSuperview()

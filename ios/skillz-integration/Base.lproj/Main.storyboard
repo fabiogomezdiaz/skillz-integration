@@ -72,19 +72,40 @@
                                     <action selector="submitScore:" destination="4qe-jZ-ma9" eventType="touchUpInside" id="CuH-Kp-jD3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfN-iK-r9E">
+                                <rect key="frame" x="176.5" y="476" width="61" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Abort"/>
+                                <connections>
+                                    <action selector="abort:" destination="4qe-jZ-ma9" eventType="touchUpInside" id="FJS-hs-Uak"/>
+                                    <action selector="submitScore:" destination="4qe-jZ-ma9" eventType="touchUpInside" id="jaJ-jh-gsm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JND-Mp-han">
+                                <rect key="frame" x="142.5" y="335" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0dC-0c-bZN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4Xh-tk-sqx" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="2FW-7X-awW"/>
                             <constraint firstItem="aw0-TN-lU9" firstAttribute="top" secondItem="0dC-0c-bZN" secondAttribute="top" constant="96" id="FxC-oT-JGi"/>
+                            <constraint firstItem="LfN-iK-r9E" firstAttribute="top" secondItem="oko-1N-uLh" secondAttribute="bottom" constant="7.5" id="GHO-8b-tfg"/>
+                            <constraint firstItem="oko-1N-uLh" firstAttribute="top" secondItem="JND-Mp-han" secondAttribute="bottom" constant="81.5" id="LLW-VA-whs"/>
+                            <constraint firstItem="JND-Mp-han" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="j3k-Hp-Fy1"/>
                             <constraint firstItem="oko-1N-uLh" firstAttribute="centerY" secondItem="0dC-0c-bZN" secondAttribute="centerY" id="p3x-lb-BKa"/>
                             <constraint firstItem="oko-1N-uLh" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="pZa-QR-7wv"/>
                             <constraint firstItem="4Xh-tk-sqx" firstAttribute="top" secondItem="aw0-TN-lU9" secondAttribute="bottom" constant="74" id="sFf-zl-47L"/>
+                            <constraint firstItem="LfN-iK-r9E" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="vkE-QU-fCP"/>
+                            <constraint firstItem="JND-Mp-han" firstAttribute="top" secondItem="4Xh-tk-sqx" secondAttribute="bottom" constant="66" id="yM0-v4-Kz7"/>
                             <constraint firstItem="aw0-TN-lU9" firstAttribute="centerX" secondItem="0dC-0c-bZN" secondAttribute="centerX" id="zzB-L1-bW1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="randomNumLabel" destination="JND-Mp-han" id="zBt-O3-Fg1"/>
                         <outlet property="scoreField" destination="4Xh-tk-sqx" id="4cA-1M-aky"/>
                     </connections>
                 </viewController>

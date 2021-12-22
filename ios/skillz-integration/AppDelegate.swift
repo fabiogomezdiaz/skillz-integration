@@ -35,6 +35,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
     // Called when a player chooses a tournament and the match countdown expires
     func tournamentWillBegin(_ gameParameters: [AnyHashable : Any], with matchInfo: SKZMatchInfo) {
+        
+        if gameParameters[AnyHashable("config")] != nil {
+            let str = gameParameters[AnyHashable("config")] as! String;
+            print("Testing config: \(str)")
+
+            // Modify your game's time limit for this match
+        }
         let vc = self.window?.rootViewController as! ViewController
         vc.startNewGame()
     }
