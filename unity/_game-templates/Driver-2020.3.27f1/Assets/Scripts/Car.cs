@@ -9,6 +9,8 @@ public class Car : MonoBehaviour
     [SerializeField] private float speedGainPerSecond = 0.2f;
     [SerializeField] private float turnSpeed = 200f;
 
+    public const string Scene = "Scene_Game";
+
     private int steerValue;
 
     void Update()
@@ -24,7 +26,7 @@ public class Car : MonoBehaviour
     {
         if(other.CompareTag("Obstacle"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(FinalScore.Scene);
         }
     }
 

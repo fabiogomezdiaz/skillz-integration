@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private TMP_Text highScoreText;
 
+    public const string Scene = "Scene_MainMenu";
+
     private void Start()
     {
         int highScore = PlayerPrefs.GetInt(ScoreSystem.HighScoreKey, 0);
@@ -17,6 +19,6 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(Car.Scene);
     }
 }

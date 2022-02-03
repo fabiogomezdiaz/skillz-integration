@@ -9,6 +9,7 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] private float scoreMultiplier;
 
     public const string HighScoreKey = "HighScore";
+    public const string FinalScoreKey = "FinalScore";
 
     private float score;
 
@@ -22,7 +23,10 @@ public class ScoreSystem : MonoBehaviour
 
     private void OnDestroy()
     {
+        int finalScore = PlayerPrefs.GetInt(FinalScoreKey, 0);
         int currentHighScore = PlayerPrefs.GetInt(HighScoreKey, 0);
+
+        PlayerPrefs.SetInt(FinalScoreKey, Mathf.FloorToInt(score));
 
         if(score > currentHighScore)
         {
