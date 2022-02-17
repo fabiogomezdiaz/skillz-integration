@@ -20,5 +20,6 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene(Car.Scene);
+        //SkillzCrossPlatform.LaunchSkillz(new SkillzGameController());
     }
 }
