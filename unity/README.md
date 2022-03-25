@@ -6,9 +6,15 @@
 # Go to implementations folder
 cd implementations
 
-# Copy one of your desired games. For example Driver-2019.4.35f1
-GAME_NAME="Driver-2019.4.35f1"
-SDK_VERSION="27.2.8"
+# Select your desired game by uncommenting one of the versions below
+#GAME_NAME="Driver-2019.4.35f1"
+#GAME_NAME="Driver-2020.3.27f1"
+#GAME_NAME="Driver-2021.2.10f1"
+
+# Select your desired SDK version by uncommenting one of the versions below
+#SDK_VERSION="27.2.8"
+#SDK_VERSION="28.0.5"
+#SDK_VERSION="28.0.11"
 cp -r "../_game-templates/${GAME_NAME}" "./${GAME_NAME}-SDK-${SDK_VERSION}"
 
 # Go to your game directory
