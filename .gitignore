@@ -1,2 +1,6 @@
 .DS_Store
 **/.vscode
+
+# Firebase
+**/google-services.json
+**/GoogleService-Info.plist
