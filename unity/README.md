@@ -16,6 +16,10 @@ cd "./${GAME_NAME}-SDK-${SDK_VERSION}"
 
 # Remove any environment specific files
 rm -rf .vscode Library Temp
+
+# Remove Builds
+rm -rf Build
+rm -rf Builds
 ```
 
 ## Accepting Android License Agreements
