@@ -1,8 +1,15 @@
-# skillz-integration-ios
+# skillz-integration
 
-## Gotchas
+This repo is intended to be used to test the integration of different Skillz SDK versions across Android, iOS, and Unity.
 
-Need a few things to get this working first:
+## Directory Structure
 
-- Turn off Bitcode
-  - Click on your project **Target**, then go to **Build Settings->Build Options** and set **Enable Bitcode** to `No`.
+- COMING SOON: Android
+- [ios](ios)
+- [unity](unity)
+
+## TODO
+
+- [ ] Create documentation for iOS App.
+- [ ] Android Sample App.
+- [ ] Sync Mode on Unity App.

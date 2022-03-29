@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Skillz.skillzInstance().initWithGameId("18441", for: self, with: SkillzEnvironment.sandbox, allowExit: true)
+        Skillz.skillzInstance().initWithGameId("PUT_GAME_ID_HERE", for: self, with: SkillzEnvironment.sandbox, allowExit: true)
         return true
     }
 
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SkillzDelegate {
 
     // Called when a player chooses a tournament and the match countdown expires
     func tournamentWillBegin(_ gameParameters: [AnyHashable : Any], with matchInfo: SKZMatchInfo) {
-        
+
         if gameParameters[AnyHashable("config")] != nil {
             let str = gameParameters[AnyHashable("config")] as! String;
             print("Testing config: \(str)")
