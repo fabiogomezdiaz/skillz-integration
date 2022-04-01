@@ -9,6 +9,21 @@ The recommended way to do this is by doing the following steps:
 * Follow the version specific Skillz SDK integration instructions from [docs.skillz.com](https://docs.skillz.com/docs/installing-skillz-unity).
 * If you are integrating Firebase, follow the instructions in the [Firebase](#firebase) section.
 
+Table of Contents
+=================
+
+* [skillz\-integration\-unity](#skillz-integration-unity)
+  * [Driver Sample Unity Game](#driver-sample-unity-game)
+  * [Integrate the Skillz SDK](#integrate-the-skillz-sdk)
+    * [1\. Clone a Game Template](#1-clone-a-game-template)
+    * [2\. Open the Cloned Unity Project](#2-open-the-cloned-unity-project)
+    * [3\. Integrate the Skillz SDK](#3-integrate-the-skillz-sdk)
+    * [Troubleshooting](#troubleshooting)
+    * [Accepting Android License Agreements](#accepting-android-license-agreements)
+  * [Integrate the Firebase Crashlytics SDK](#integrate-the-firebase-crashlytics-sdk)
+  * [Contributing](#contributing)
+  * [TODOs](#todos)
+
 ## Driver Sample Unity Game
 
 `Driver` is a simple driving game where the goal is to be able to drive for as long as possible without crashing. The longer you are driving, the bigger your score gets. Tap the left side of the screen to turn left and tap right to turn right.
@@ -196,12 +211,24 @@ In order to integrate Firebase Crashlytics into your Unity Project, follow the s
 * Create a Firebase account.
 * Create a Firebase project.
 * Register your Unity Game apps with Firebase.
+* Download the [Firebase SDK]([8.6.2](https://dl.google.com/firebase/sdk/unity/firebase_unity_sdk_8.6.2.zip)) and install the `FirebaseCrashlytics.unitypackage` package into your Unity Project.
 * Download the Firebase configuration files for iOS and Android into your Project's **Assets** directory.
 * Initialize Firebase and Start sending test crashes to Crashlytics.
   * The code to initialize Firebase ([Step 2](https://firebase.google.com/docs/crashlytics/get-started?platform=unity#initialize-crashlytics)) and send test crashes to Crashlytics ([Step 5](https://firebase.google.com/docs/crashlytics/get-started?platform=unity#force-test-crash)) has already been added to the following files in the **Assets** folder, respectively:
     * `CrashlyticsInit.cs` which is used by the `CrashlyticsInitializer` GameObject in the `Scene_MainMenu` scene.
-      * To use this code, you need to uncomment lines 6 and 12-30.
     * `CrashlyticsTester.cs` which is used by the `CrashlyticsTestCrash` GameObject in the `Scene_MainMenu` scene.
+
+Once Firebase Crashlytics has been setup in your Unity Project along with the configuration files, you need to enable the Firebase Crashlytics initialization code by uncommenting lines 6 and 12-30 in the `CrashlyticsInit.cs` file.
+
+Now try building and deploying your game to your iOS or Android device and let it run for a few minutes.
+
+Now open your Crashlytics Dashboard in your Firebase project and select your registered app in the top dropdown, as shown below:
+
+<p align="center">
+  <img src="_static/1_crash_screenshot.png" />
+</p>
+
+If you can see the `CrashlyticsTester.throwExceptionEvery60Updates` crash as shown above, then you have integrated Firebase Crashlytics successfully!!!
 
 ## Contributing
 
@@ -210,3 +237,4 @@ When contributing back to the Driver game, please make sure that the game logic 
 ## TODOs
 
 * Make sure the above steps work with Unity on Windows.
+* Create more elaborate guidelines for contribution
