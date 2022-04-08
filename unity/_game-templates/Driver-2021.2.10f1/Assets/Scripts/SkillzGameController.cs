@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public sealed class SkillzGameController : SkillzMatchDelegate
 {
     private const string GameScene            = Car.Scene;  // Your game scene name
-    private const string ProgressionRoomScene = "ProgressionRoom"; // Your player progression room
+    private const string ProgressionRoomScene = Progression.Scene; // Your player progression room
     private const string StartMenuScene       = MainMenu.Scene;  // Your menu scene exiting Skillz will return to (optional)
 
     // Called when a player chooses a tournament and the match countdown expires

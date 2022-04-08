@@ -9,7 +9,7 @@ public class Car : MonoBehaviour
     [SerializeField] private float speedGainPerSecond = 0.2f;
     [SerializeField] private float turnSpeed = 200f;
 
-    public const string Scene = "Scene_Game";
+    public const string Scene = "Game";
 
     private int steerValue;
 
